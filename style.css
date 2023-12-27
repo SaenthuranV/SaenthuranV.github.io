@@ -190,6 +190,50 @@ section#about h2 {
     margin-bottom: 30px; /* Space between the heading and the content */
     font-size: 2.2rem; /* Larger font size for the heading */
 }
+section#about {
+    background-color: #f4f4f4; /* A subtle background color */
+    padding: 50px 20px; /* More padding for a spacious look */
+    text-align: center; /* Center the text */
+}
+
+section#about h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+.about-container {
+    max-width: 800px; /* Max-width for readability */
+    margin: auto;
+}
+
+.about-container p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.highlight {
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+.about-greeting {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container p {
+        font-size: 0.9em;
+    }
+    
+    .about-greeting {
+        font-size: 1.1em;
+    }
+}
 
 .about-content .intro {
     font-size: 1.2rem; /* Slightly larger font size for the introduction */
