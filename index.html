@@ -3,11 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saenthurans Portfolio</title>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ABOUT ME</h1>
-    </div>
+    <header>
+        <h1>Saenthuran Vignarajah</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>
+            <strong>University of Ontario Institute of Technology</strong> - Computer Science - BSc<br>
+            Sep 2018 - April 2024<br>
+            Relevant Courses: Computer Programming, Computer Architecture, Data Analysis, Data Structures and Algorithms, Software Systems Development and Integration, Software Design, Database Systems and Concepts, Analysis and Design of Algorithms, Big Data Analytics, Software Quality Assurance, Systems Programming and Web Application Development.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>
+            <strong>CIBC</strong> - Technical Analyst Intern - Branch Support Operations<br>
+            Jan 2022 - April 2023<br>
+            <ul>
+                <li>Responsible for Designing and launching a new internal server reporting system, to improve efficiency and collaboration between departments by providing real-time data on server errors.</li>
+                <li>Performed automated health checks on thousands of servers using Python and libraries such as pythonping, beautifulsoup4, and urllib2 and provided detailed reports to technical teams.</li>
+                <li>Resulted in saving hundreds of work hours annually by automating the daily manual check-up process across all servers.</li>
+                <li>Responsible for developing an ARS tool that provides real-time visibility into employee permissions, enabling upper management to identify and address operational deficiencies.</li>
+                <li>Successfully automated multiple tasks for various teams with python, freeing up time for new activities and resulting in a yearly reduction of labour costs for multiple tasks.</li>
+                <li>Updated and maintained many SQL databases (MySQL) for storing bank information (server ip, vendor data, employee information and more).</li>
+                <li>Ensuring smooth operations for multiple banks through prompt identification and resolution of network and infrastructure issues.</li>
+                <li>Using a diverse set of tools, including Service Now, PACK, Bali, Gasper, ISE, and Stealth Watch, to efficiently resolve network infrastructure issues such as branch internet downtime, network overutilization, server hardware problems, Automated Banking Machine difficulties, and Whitelisting mac addresses.</li>
+                <li>Maintain and troubleshoot pre-existing tools such as PACK with C, resulting in improved performance and efficiency for daily team activities.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+    
+        <div class="project">
+            <h3>Website Creator using MEVN Stack</h3>
+            <ul>
+                <li>Developed a dynamic web application leveraging the MEVN stack (MongoDB, Express.js, VueJS, Node.js).</li>
+                <li>Engineered front-end interactions including user authentication, profile management, and content editing using VueJS.</li>
+                <li>Implemented unique session handling with Express.js and UUID.</li>
+                <li>Utilized MongoDB for robust data management and analytics.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>Multiplayer UNO Game Development</h3>
+            <ul>
+                <li>Led a team of four in the agile development of a Multiplayer UNO game.</li>
+                <li>Utilized JavaFX for an intuitive and visually appealing UI.</li>
+                <li>Crafted the game's backend logic in Java for online and local multiplayer modes.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>OpenCV-Based Mini Photoshop Application</h3>
+            <ul>
+                <li>Architected a simplified image editing tool using Python and OpenCV.</li>
+                <li>Implemented 'Scratches and Dust', 'Grain', and 'Double Exposure' features.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>Comprehensive Banking System Simulation</h3>
+            <ul>
+                <li>Collaborated on the development of a full-scale banking system simulation.</li>
+                <li>Engineered a Python-based front-end for ATM-like transactions.</li>
+                <li>Developed a Java-based backend for processing daily transactions.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <form id="contactForm" action="https://formspree.io/f/mbjnrnpj" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    
+
+    <footer>
+        <p>© 2023 Saenthuran Vignarajah</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
